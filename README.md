@@ -57,6 +57,12 @@ Sube tus cambios a tu repositorio fork:
 git push origin mi-contribucion
 Crea un nuevo Pull Request en este repositorio.
 
+## Vistas
+![image](https://github.com/DIEGO-ORE-ENCISO/Login-Angular-JWT/assets/173582694/282beaa8-151a-49bd-bd2f-8f30b4124ceb)
+![image](https://github.com/DIEGO-ORE-ENCISO/Login-Angular-JWT/assets/173582694/e438a98d-dd21-4be6-abe5-92a6fd801f89)
+![image](https://github.com/DIEGO-ORE-ENCISO/Login-Angular-JWT/assets/173582694/caa6ba54-302b-44f7-9a6d-9d2830f6a6c5)
+![image](https://github.com/DIEGO-ORE-ENCISO/Login-Angular-JWT/assets/173582694/f2db664a-f58e-43db-85b7-d8fe9bbc2aec)
+
 ## Créditos
 Este proyecto fue desarrollado por DIEGO ANTONIO ORE ENCISO.
 
