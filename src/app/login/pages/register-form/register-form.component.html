@@ -1,0 +1,45 @@
+<section class="cont-admin">
+  <div class="form-box">
+    <div class="form-value">
+      <form [formGroup]="myForm" autocomplete="off" (ngSubmit)="register()">
+        <h2>Regístrate</h2>
+
+        <div class="inputbox">
+          <input formControlName="nombre" type="text" name="nombre" required>
+          <label for="">Nombre</label>
+          <ion-icon name="person-circle-outline"></ion-icon>
+        </div>
+        <div class="inputbox">
+          <input formControlName="apellido" type="text" name="apellido" required>
+          <label for="">Apellido</label>
+          <ion-icon name="person-circle-outline"></ion-icon>
+        </div>
+        <div class="inputbox">
+          <input formControlName="username" type="text" name="username" required>
+          <label for="">Usuario</label>
+          <ion-icon name="person-circle-outline"></ion-icon>
+        </div>
+        <div class="inputbox">
+          <input formControlName="password" type="password" name="password" required>
+          <label for="">Contraseña</label>
+          <ion-icon name="lock-closed-outline"></ion-icon>
+        </div>
+        <div class="inputbox">
+          <input formControlName="repeatPassword" type="password" name="repeatPassword" required>
+          <label for="">Repetir Contraseña</label>
+          <ion-icon name="lock-closed-outline"></ion-icon>
+        </div>
+        <div class="inputbox">
+          <input formControlName="email" type="email" name="email" required>
+          <label for="">Correo Electrónico</label>
+          <ion-icon name="mail-outline"></ion-icon>
+        </div>
+
+        <button [disabled]="myForm.invalid">Iniciar Sesión</button>
+        <div class="text-center mt-3">
+          <a [routerLink]="'/auth/login'" class="text-decoration-none text-warning">¿Ya tienes una cuenta? Inicia sesión aquí</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

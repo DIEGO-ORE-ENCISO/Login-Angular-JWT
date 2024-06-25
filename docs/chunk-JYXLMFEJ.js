@@ -1,0 +1,1 @@
+import{Pa as a,Qa as o,Wa as r,Za as i,_ as n}from"./chunk-JLIELJDY.js";var u=(()=>{class e{static \u0275fac=function(t){return new(t||e)};static \u0275cmp=n({type:e,selectors:[["app-prueba-page"]],standalone:!0,features:[i],decls:2,vars:0,template:function(t,m){t&1&&(a(0,"h1"),r(1,"TIENDA PRINCIPAL"),o())}})}return e})();export{u as default};

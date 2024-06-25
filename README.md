@@ -1,27 +1,64 @@
-# LoginAngularJwt
+## ANGULAR V. 18
+## Proyecto Angular de Autenticación con JWT
+Este proyecto es una aplicación Angular que consume una API de backend para implementar un sistema de autenticación y registro de usuarios utilizando JSON Web Tokens (JWT). También se han implementado guards para garantizar la seguridad de las rutas. La aplicación está diseñada con un enfoque responsivo, lo que significa que se adapta de manera óptima a diferentes dispositivos y tamaños de pantalla.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.0-next.2.
+## Descripción
+El proyecto se ha desarrollado utilizando Angular, y además hace uso de las siguientes tecnologías y librerías:
 
-## Development server
+Bootstrap 5: Se ha utilizado Bootstrap 5 para la creación de algunos componentes de la interfaz de usuario, como botones, facilitando el diseño responsive y la maquetación de los mismos.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+SweetAlert 2: se ha integrado para proporcionar notificaciones y mensajes de alerta personalizados en la aplicación, mejorando la experiencia del usuario durante el proceso de autenticación y registro.
 
-## Code scaffolding
+Ionicons: Los iconos utilizados en la aplicación son de Ionicons, una librería de iconos de alta calidad y totalmente personalizables.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Instalación
+Clona este repositorio en tu máquina local utilizando el siguiente comando:
+git clone https://ruta/al/repo.git
 
-## Build
+Navega hasta el directorio del proyecto:
+cd nombre_del_proyecto
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Instala las dependencias utilizando npm:
+npm install
 
-## Running unit tests
+## Configuración
+Antes de ejecutar la aplicación, asegúrate de configurar correctamente la URL de la API backend en el archivo de configuración correspondiente. Normalmente se encuentra en src/environments/environment.ts.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+export const environment = {
+  baseUrl: 'http://localhost:3000/api' // Cambia esta URL por la de tu API backend
+};
 
-## Running end-to-end tests
+## Uso
+Una vez que hayas configurado la URL de la API backend, puedes ejecutar la aplicación utilizando el siguiente comando:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+ng serve -o
 
-## Further help
+Esto iniciará el servidor de desarrollo de Angular en http://localhost:4200/. Puedes abrir esta URL en tu navegador para ver la aplicación en funcionamiento.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Características
+Autenticación: Permite a los usuarios autenticarse utilizando un formulario de inicio de sesión. Los usuarios autenticados recibirán un token JWT que se utilizará para autorizar las solicitudes subsiguientes a la API.
+
+Registro de Usuarios: Los usuarios pueden registrarse utilizando un formulario de registro. La información del usuario se enviará a la API backend para su procesamiento.
+
+Guards de Rutas: Se han implementado guards para proteger ciertas rutas de la aplicación. Por ejemplo, se puede configurar un guard para asegurar que solo los usuarios autenticados puedan acceder a ciertas páginas.
+
+## Contribuir
+Si deseas contribuir a este proyecto, por favor sigue los siguientes pasos:
+
+Realiza un fork del repositorio.
+
+Crea una nueva rama para tu contribución: 
+git checkout -b mi-contribucion
+
+Realiza tus cambios y haz commit de los mismos: 
+git commit -am 'Añadir nueva característica'
+
+Sube tus cambios a tu repositorio fork:
+git push origin mi-contribucion
+Crea un nuevo Pull Request en este repositorio.
+
+## Créditos
+Este proyecto fue desarrollado por DIEGO ANTONIO ORE ENCISO.
+
+
+

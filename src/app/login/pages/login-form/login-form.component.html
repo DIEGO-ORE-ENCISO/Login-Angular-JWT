@@ -1,0 +1,37 @@
+<section class="cont-admin">
+  <div class="form-box">
+      <div class="form-value">
+          <form  [formGroup]="myForm" autocomplete="off" (ngSubmit)="login()">
+              <h2>Login</h2>
+
+              <div class="inputbox">
+                  <ion-icon name="person-circle-outline"></ion-icon>
+                  <input
+                  formControlName="username"
+                  type="text" name="usuario" required>
+                  <label for="">Usuario</label>
+              </div>
+              <div class="inputbox">
+                  @if (hidePassword) {
+                    <ion-icon name="eye-outline" (click)="togglePasswordVisibility()"></ion-icon>
+                  }
+                  @else{
+                    <ion-icon name="eye-off-outline" (click)="togglePasswordVisibility()"></ion-icon>
+                  }
+                  <input
+                  formControlName="password"
+                   type="{{hidePassword ? 'password' : 'text'}}" name="password" id="password" required>
+                  <label for="">Password</label>
+              </div>
+
+              <button [disabled]="myForm.invalid">Iniciar Session</button>
+              <div class="text-center mt-3">
+                <a [routerLink]="'/auth/register'" class="text-decoration-none text-warning">¿No tienes cuenta? Registrate aquí</a>
+              </div>
+          </form>
+      </div>
+  </div>
+</section>
+
+
+

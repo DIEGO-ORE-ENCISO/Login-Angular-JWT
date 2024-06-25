@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, computed, effect, inject } from '@angular/core';
+import { Router, RouterOutlet } from '@angular/router';
+import { AuthService } from './login/services/auth.service';
+import { AuthStatus } from './login/interfaces';
 
 @Component({
   selector: 'app-root',
@@ -9,5 +11,8 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'login-angular-jwt';
+
+
+
+
 }

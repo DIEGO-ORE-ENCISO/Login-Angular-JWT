@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins',sans-serif;
+}
+
+
+.cont-admin {
+  max-width: 100%;
+  min-height: 100vh;
+  margin: auto;
+  padding: 40px;
+  box-shadow: -1px 0px 11px 1px rgb(0, 0, 0);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Añadimos posición relativa para poder usar el pseudo-elemento ::before */
+}
+
+.cont-admin::before {
+  content: ""; /* Necesario para mostrar el pseudo-elemento */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/img/fondoLogin.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: -1; /* Asegura que el pseudo-elemento esté detrás del contenido */
+  animation: anime 5s linear infinite;
+}
+@keyframes anime {
+  0% {
+      filter: hue-rotate(0deg) brightness(0.4); /* Sin rotación ni cambio de brillo */
+  }
+  50% {
+      filter: hue-rotate(180deg) brightness(0.4); /* Mitad de la rotación y brillo reducido */
+  }
+  100% {
+      filter: hue-rotate(360deg) brightness(0.4); /* Rotación completa y brillo restaurado */
+  }
+}
